@@ -12,15 +12,6 @@ rule IsNim : Nim{
     pe.is_pe and $a1 and pe.characteristics & pe.LINE_NUMS_STRIPPED
 }
 
-// rule cpp_bin {
-
-// }
-
-// rule golang_bin {
-//   condition:
-//     pe.number_of_sections == 13
-// }
-
 // https://github.com/SentineLabs
 // https://github.com/SentineLabs/AlphaGolang/blob/main/0.identify_go_binaries.yara
 rule TTP_GoBuildID : Go
